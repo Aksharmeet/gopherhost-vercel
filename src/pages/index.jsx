@@ -7,10 +7,7 @@ export default function HomePage() {
     <>
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
-
-      <main>
-        <section className='bg-white'></section>
-      </main>
+      <main className='font-nunito e text-base  text-black'></main>
     </>
   );
 }
