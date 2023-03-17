@@ -32,6 +32,24 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    dangerouslyAllowSVG: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'tailwindui.com',
+        port: '',
+        pathname: '/img/**/*.{jpg,png,svg}',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+      },
+    ],
+  },
+
+  // plugins: [require('@tailwindcss/forms')],
 };
 
 module.exports = nextConfig;
