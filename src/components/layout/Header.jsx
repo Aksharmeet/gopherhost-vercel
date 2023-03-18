@@ -3,18 +3,26 @@ import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Fragment } from 'react';
+import { useRouter } from 'next/router';
+import { Fragment, useEffect, useState } from 'react';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-export default function Example() {
+export default function Navbar() {
+  const router = useRouter();
+  const [switchColor, setSwitchColor] = useState('/');
+
+  useEffect(() => {
+    setSwitchColor(router.pathname);
+  }, [router]);
+
   return (
-    <Disclosure as='nav' className='bg-white shadow'>
+    <Disclosure as='nav'>
       {({ open }) => (
         <>
-          <div className='mx-auto max-w-7xl px-2 sm:px-4 lg:px-8'>
+          <div className='relative z-10  mx-auto max-w-7xl py-5 px-2 sm:px-4 lg:px-8'>
             <div className='flex h-16 justify-between'>
               <div className='flex px-2 lg:px-0'>
                 <Link
@@ -41,7 +49,9 @@ export default function Example() {
                   {/* Current: "border-blue-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <Link
                     href='/'
-                    className='inline-flex items-center border-b-2 border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900'
+                    className={`inline-flex items-center border-b-2 ${
+                      switchColor === '/'
+                    }border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900`}
                   >
                     Home
                   </Link>
@@ -106,7 +116,10 @@ export default function Example() {
                 <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
-                    <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
+                    <XMarkIcon
+                      className='absolute top-0 z-10 block h-6 w-6'
+                      aria-hidden='true'
+                    />
                   ) : (
                     <Bars3Icon className='block h-6 w-6' aria-hidden='true' />
                   )}
@@ -144,7 +157,7 @@ export default function Example() {
                     leaveFrom='transform opacity-100 scale-100'
                     leaveTo='transform opacity-0 scale-95'
                   >
-                    <Menu.Items className='absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
+                    <Menu.Items className='z-1 absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none'>
                       <Menu.Item>
                         {({ active }) => (
                           <Link
@@ -191,36 +204,55 @@ export default function Example() {
             </div>
           </div>
 
-          <Disclosure.Panel className='lg:hidden'>
+          <Disclosure.Panel className='absolute top-0 z-10 h-[100vh] w-[100%] bg-white lg:hidden'>
             <div className='space-y-1 pt-2 pb-3'>
+              <div className=' flex  w-[100%] justify-end py-6 pr-4'>
+                <Disclosure.Button className=' rounded-md  p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500'>
+                  <XMarkIcon className=' block h-6 w-6' aria-hidden='true' />
+                </Disclosure.Button>
+              </div>
               {/* Current: "bg-blue-50 border-blue-500 text-blue-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" */}
               <Disclosure.Button
                 as='a'
-                href='#'
+                href='/'
                 className='block border-l-4 border-blue-500 bg-blue-50 py-2 pl-3 pr-4 text-base font-medium text-blue-700'
               >
-                Dashboard
+                Home
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
-                href='#'
+                href='/domains'
                 className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
               >
-                Team
+                Domains
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
-                href='#'
+                href='/hosting'
                 className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
               >
-                Projects
+                Hosting
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
-                href='#'
+                href='/blog'
                 className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
               >
-                Calendar
+                Blog
+              </Disclosure.Button>
+              <Disclosure.Button
+                as='a'
+                href='/about'
+                className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
+              >
+                About
+              </Disclosure.Button>
+              <Disclosure.Button
+                as='a'
+                href='/contact'
+                className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
+              >
+                Contact
               </Disclosure.Button>
             </div>
             <div className='border-t border-gray-200 pt-4 pb-3'>
@@ -253,21 +285,21 @@ export default function Example() {
               <div className='mt-3 space-y-1'>
                 <Disclosure.Button
                   as='a'
-                  href='#'
+                  href='/your-profile'
                   className='block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800'
                 >
                   Your Profile
                 </Disclosure.Button>
                 <Disclosure.Button
                   as='a'
-                  href='#'
+                  href='/settings'
                   className='block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800'
                 >
                   Settings
                 </Disclosure.Button>
                 <Disclosure.Button
                   as='a'
-                  href='#'
+                  href='/sign-out'
                   className='block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800'
                 >
                   Sign out

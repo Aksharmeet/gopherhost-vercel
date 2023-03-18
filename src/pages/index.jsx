@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <>
       {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle='Home' />
       <main className='font-nunito e text-base  text-black'>
         <Hero />
         <Features />
