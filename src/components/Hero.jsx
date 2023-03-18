@@ -2,8 +2,8 @@ import HeroEarth from '@/../public/svg/HeroEarth.svg';
 
 const Hero = () => {
   return (
-    <div className='relative pb-24 lg:pb-96'>
-      <div className>
+    <div className='relative'>
+      <div>
         {/* Hero */}
         <div className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
           <svg
@@ -31,26 +31,19 @@ const Hero = () => {
           </svg>
         </div>
         <div className='relative isolate'>
-          <div className='sm:py-15 py-15 mx-auto max-w-7xl px-6 lg:flex lg:items-center lg:gap-x-10 lg:py-20 lg:px-8'>
-            <div className='mx-auto max-w-2xl lg:mx-0 lg:flex-auto'>
-              <div className='flex'>
-                <div className='items relative flex gap-x-4 rounded-full py-1 px-4 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
-                  <span className='font-semibold text-indigo-600'>Simple</span>
-                  <span
-                    className='h-6 w-px bg-gray-900/10'
-                    aria-hidden='true'
-                  />
-                  <span className='font-semibold text-indigo-600'>
-                    {' '}
-                    Affordable
-                  </span>
-                  <span
-                    className='h-6 w-px bg-gray-900/10'
-                    aria-hidden='true'
-                  />
-                  <span className='font-semibold text-indigo-600'> Fast</span>
-                </div>
+          <div className='mx-auto max-w-7xl py-20  sm:py-20  lg:flex lg:items-center lg:gap-x-10 lg:py-20 lg:px-8'>
+            <div className='mx-auto max-w-2xl px-6   lg:mx-0 lg:flex-auto'>
+              <div className='items relative flex max-w-fit gap-x-4 rounded-full py-1 px-4 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
+                <span className='font-semibold text-indigo-600'>Simple</span>
+                <span className='h-6 w-px bg-gray-900/10' aria-hidden='true' />
+                <span className='font-semibold text-indigo-600'>
+                  {' '}
+                  Affordable
+                </span>
+                <span className='h-6 w-px bg-gray-900/10' aria-hidden='true' />
+                <span className='font-semibold text-indigo-600'> Fast</span>
               </div>
+
               <h1 className='mt-5 max-w-lg text-3xl font-bold  tracking-wide text-gray-900 sm:text-5xl'>
                 The Perfect Place to Host Your Website
               </h1>
@@ -73,9 +66,19 @@ const Hero = () => {
                   Learn more <span aria-hidden='true'>→</span>
                 </a>
               </div>
+
+              {/* <div className='mt-10 flex items-center gap-x-6'>
+                <SearchBar />
+              </div> */}
             </div>
-            <div className='mt-16 sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow'>
-              <HeroEarth style={{ fontSize: '600px' }} />
+            <div className='mx-auto mt-16 overflow-hidden sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow'>
+              <div className='flex justify-center text-[95vw] md:text-[600px]'>
+                <HeroEarth
+                  style={{
+                    transform: 'rotate(-5deg)',
+                  }}
+                />
+              </div>
             </div>
           </div>
         </div>
