@@ -26,8 +26,8 @@ const Hero = () => {
                 y2='474.645'
                 gradientUnits='userSpaceOnUse'
               >
-                <stop stopColor='#9089FC' />
-                <stop offset={1} stopColor='#FF80B5' />
+                <stop stopColor='#2563FA ' />
+                <stop offset={1} stopColor='#00E5FF' />
               </linearGradient>
             </defs>
           </svg>
@@ -65,10 +65,6 @@ const Hero = () => {
                   Learn more <span aria-hidden='true'>→</span>
                 </a>
               </div>
-
-              {/* <div className='mt-10 flex items-center gap-x-6'>
-                <SearchBar />
-              </div> */}
             </div>
             <div className='mx-auto mt-16 overflow-hidden sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow'>
               <div
