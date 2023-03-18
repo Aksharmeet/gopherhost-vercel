@@ -6,10 +6,10 @@ import Header from './Header';
 export default function Layout({ children }: { children: React.ReactNode }) {
   // Put Header or Footer Here
   return (
-    <>
+    <div className='font-nunito '>
       <Header />
       {children}
       <Footer />
-    </>
+    </div>
   );
 }

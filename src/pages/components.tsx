@@ -35,10 +35,7 @@ export default function ComponentsPage() {
 
   return (
     <>
-      <Seo
-        templateTitle='Components'
-        description='Pre-built components with awesome default'
-      />
+      <Seo templateTitle='Components' description='' />
 
       <main>
         <section
