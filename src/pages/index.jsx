@@ -1,14 +1,14 @@
 import * as React from 'react';
 
-import Features from '@/components/Features';
 import Seo from '@/components/Seo';
 
-import BlogPreview from '../components/BlogPreview';
-import CallToAction from '../components/CallToAction';
-import Hero from '../components/Hero';
-import Pricing from '../components/Pricing';
-import Testimonials from '../components/Testimonials';
-import TrustBanner from '../components/TrustBanner';
+import BlogPreview from '../components/landing/BlogPreview';
+import CallToAction from '../components/landing/CallToAction';
+import Features from '../components/landing/Features';
+import Hero from '../components/landing/Hero';
+import Pricing from '../components/landing/Pricing';
+import Testimonials from '../components/landing/Testimonials';
+import TrustBanner from '../components/landing/TrustBanner';
 
 export default function HomePage() {
   return (

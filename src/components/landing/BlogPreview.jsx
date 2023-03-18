@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { featuredPost, posts } from '../_mockData/blogPreview';
+import { featuredPost, posts } from '../../_mockData/blogPreview';
 
 export default function BlogPreview() {
   return (
