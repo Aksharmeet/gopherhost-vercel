@@ -1,11 +1,11 @@
 import * as React from 'react';
 
 import Features from '@/components/Features';
-import Hero from '@/components/Hero';
 import Seo from '@/components/Seo';
 
 import BlogPreview from '../components/BlogPreview';
 import CallToAction from '../components/CallToAction';
+import Hero from '../components/Hero';
 import Pricing from '../components/Pricing';
 import Testimonials from '../components/Testimonials';
 import TrustBanner from '../components/TrustBanner';

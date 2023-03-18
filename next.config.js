@@ -46,6 +46,11 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'gopherhost.com',
+        port: '',
+      },
     ],
   },
 

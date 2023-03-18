@@ -34,7 +34,7 @@ export default function BlogPreview() {
             <div className='flex'>
               <a
                 href={featuredPost.href}
-                className='text-sm font-semibold leading-6 text-indigo-600'
+                className='text-sm font-semibold leading-6 text-blue-600'
                 aria-describedby='featured-post'
               >
                 Continue reading <span aria-hidden='true'>&rarr;</span>

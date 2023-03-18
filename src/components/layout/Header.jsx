@@ -24,24 +24,24 @@ export default function Example() {
                 >
                   <Image
                     className='block h-8 w-auto lg:hidden'
-                    src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
+                    src='https://gopherhost.com/wp-content/uploads/2022/05/logo.svg'
                     alt='Your Company'
                     width={40}
                     height={40}
                   />
                   <Image
                     className='hidden h-8 w-auto lg:block'
-                    src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600'
+                    src='https://gopherhost.com/wp-content/uploads/2022/05/logo.svg'
                     alt='Your Company'
                     width={40}
                     height={40}
                   />
                 </Link>
                 <div className='hidden lg:ml-6 lg:flex lg:space-x-8'>
-                  {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+                  {/* Current: "border-blue-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <Link
                     href='/'
-                    className='inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900'
+                    className='inline-flex items-center border-b-2 border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900'
                   >
                     Home
                   </Link>
@@ -94,7 +94,7 @@ export default function Example() {
                     <input
                       id='search'
                       name='search'
-                      className='block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6'
+                      className='block w-full rounded-md border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6'
                       placeholder='Search'
                       type='search'
                     />
@@ -103,7 +103,7 @@ export default function Example() {
               </div>
               <div className='flex items-center lg:hidden'>
                 {/* Mobile menu button */}
-                <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500'>
+                <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500'>
                   <span className='sr-only'>Open main menu</span>
                   {open ? (
                     <XMarkIcon className='block h-6 w-6' aria-hidden='true' />
@@ -115,7 +115,7 @@ export default function Example() {
               <div className='hidden lg:ml-4 lg:flex lg:items-center'>
                 <button
                   type='button'
-                  className='flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                  className='flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
                 >
                   <span className='sr-only'>View notifications</span>
                   <BellIcon className='h-6 w-6' aria-hidden='true' />
@@ -124,7 +124,7 @@ export default function Example() {
                 {/* Profile dropdown */}
                 <Menu as='div' className='relative ml-4 flex-shrink-0'>
                   <div>
-                    <Menu.Button className='flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'>
+                    <Menu.Button className='flex rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'>
                       <span className='sr-only'>Open user menu</span>
                       <Image
                         className='h-8 w-8 rounded-full'
@@ -193,11 +193,11 @@ export default function Example() {
 
           <Disclosure.Panel className='lg:hidden'>
             <div className='space-y-1 pt-2 pb-3'>
-              {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" */}
+              {/* Current: "bg-blue-50 border-blue-500 text-blue-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" */}
               <Disclosure.Button
                 as='a'
                 href='#'
-                className='block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700'
+                className='block border-l-4 border-blue-500 bg-blue-50 py-2 pl-3 pr-4 text-base font-medium text-blue-700'
               >
                 Dashboard
               </Disclosure.Button>
@@ -244,7 +244,7 @@ export default function Example() {
                 </div>
                 <button
                   type='button'
-                  className='ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                  className='ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2'
                 >
                   <span className='sr-only'>View notifications</span>
                   <BellIcon className='h-6 w-6' aria-hidden='true' />

@@ -467,7 +467,7 @@ const colorList = [
   'fuchsia',
   'purple',
   'violet',
-  'indigo',
+  'blue',
   'blue',
   'sky',
   'cyan',
