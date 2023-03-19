@@ -2,12 +2,14 @@ import * as React from 'react';
 
 import Seo from '@/components/Seo';
 
+// data
+import { featuresLanding } from '../_mockData/features';
+import CallToAction from '../components/common/CallToAction';
+import Features from '../components/common/Features';
+import Pricing from '../components/common/Pricing';
+import Testimonials from '../components/common/Testimonials';
 import BlogPreview from '../components/landing/BlogPreview';
-import CallToAction from '../components/landing/CallToAction';
-import Features from '../components/landing/Features';
 import Hero from '../components/landing/Hero';
-import Pricing from '../components/landing/Pricing';
-import Testimonials from '../components/landing/Testimonials';
 import TrustBanner from '../components/landing/TrustBanner';
 
 export default function HomePage() {
@@ -17,10 +19,10 @@ export default function HomePage() {
       <Seo templateTitle='Home' />
       <main className='font-nunito e text-base  text-black'>
         <Hero />
-        <Features />
+        <Features data={featuresLanding} type='landing' />
         <TrustBanner />
-        <Pricing />
-        <CallToAction />
+        <Pricing page='landing' />
+        <CallToAction type='landing' />
         <BlogPreview />
         <Testimonials />
       </main>

@@ -28,7 +28,7 @@ export default function CallToAction() {
             and we will do our best to return your request in a timely fashion.
           </p>
           <Button
-            href='/register'
+            href='/contact'
             color='white'
             className='mt-10 px-[5rem] py-3'
           >
