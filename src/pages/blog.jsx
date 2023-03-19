@@ -1,13 +1,14 @@
 import React from 'react';
 
 import Hero from '../components/blog/Hero';
-import SectionOne from '../components/blog/sectionOne';
+import SectionTwo from '../components/blog/sectionTwo';
 
 function Blog() {
   return (
     <div>
       <Hero />
-      <SectionOne />
+
+      <SectionTwo />
     </div>
   );
 }
