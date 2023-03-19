@@ -4,11 +4,11 @@ import Seo from '@/components/Seo';
 
 // data
 import { featuresLanding } from '../_mockData/features';
+import BlogPreview from '../components/common/BlogPreview';
 import CallToAction from '../components/common/CallToAction';
 import Features from '../components/common/Features';
 import Pricing from '../components/common/Pricing';
 import Testimonials from '../components/common/Testimonials';
-import BlogPreview from '../components/landing/BlogPreview';
 import Hero from '../components/landing/Hero';
 import TrustBanner from '../components/landing/TrustBanner';
 
