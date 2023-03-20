@@ -102,9 +102,9 @@ export default function Hero() {
         </svg>
       </div>
       <Container>
-        <div className='lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
-          <div className='  relative z-10 mx-auto mt-0 max-w-xl lg:col-span-7 lg:mt-[7rem] lg:max-w-2xl lg:pt-6 xl:col-span-6'>
-            <h1 className=' max-w-md  text-5xl font-extrabold  tracking-tight text-gray-900 sm:max-w-none md:max-w-xl lg:max-w-none '>
+        <div className='px-6 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
+          <div className='  z-1 relative mx-auto mt-0 lg:col-span-7 lg:mt-[7rem] lg:max-w-2xl lg:pt-6 xl:col-span-6'>
+            <h1 className=' max-w-xl  text-5xl font-extrabold  tracking-tight text-gray-900 sm:max-w-none lg:max-w-none '>
               Fast & Secure Website Hosting Plans
             </h1>
             <p className=' mt-6 max-w-sm  text-lg text-gray-600 sm:max-w-none md:max-w-xl lg:max-w-none '>

@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { featuresLanding } from '../_mockData/features';
+import AboutUs from '../components/about/AboutUs';
 import Banner from '../components/about/Banner';
+import Features from '../components/about/Features';
 import Hero from '../components/about/Hero';
+import Stats from '../components/about/Stats';
 import BlogPreview from '../components/common/BlogPreview';
-import Features from '../components/common/Features';
 import Testimonials from '../components/common/Testimonials';
 import Seo from '../components/Seo';
 
@@ -13,7 +14,9 @@ function about() {
     <>
       <Seo />
       <Hero />
-      <Features type='about' data={featuresLanding} />
+      <AboutUs />
+      <Stats />
+      <Features />
       <Banner />
       <BlogPreview />
       <Testimonials />

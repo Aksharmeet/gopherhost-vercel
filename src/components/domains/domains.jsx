@@ -3,7 +3,7 @@ import { FaGlobe } from 'react-icons/fa';
 const Domains = () => {
   return (
     <div className='mx-auto max-w-screen-xl py-12 px-4 sm:px-6 lg:px-8'>
-      <div className='grid grid-cols-2 gap-8 sm:grid-cols-4'>
+      <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4'>
         <div className='rounded-lg bg-white shadow-lg'>
           <div className='p-6'>
             <div className='flex h-12 w-12 items-center justify-center rounded-md bg-indigo-500 text-white'>

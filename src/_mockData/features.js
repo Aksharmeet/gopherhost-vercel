@@ -6,6 +6,7 @@ import {
 } from '@heroicons/react/20/solid';
 
 export const featuresHosting = [
+  { title: ' All Web Hosting plans include:' },
   {
     name: 'Free SSL Certificate',
     description:
@@ -33,6 +34,7 @@ export const featuresHosting = [
 ];
 
 export const featuresLanding = [
+  { title: 'Why Choose Gopherhost ?' },
   {
     name: 'Low Cost, High Performance',
     description: 'Fastest Hosting accounts and incredibly affordable prices.',

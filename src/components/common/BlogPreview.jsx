@@ -4,9 +4,9 @@ import { featuredPost, posts } from '../../_mockData/blogPreview';
 
 export default function BlogPreview() {
   return (
-    <div className='bg-white py-24 sm:py-32'>
-      <div className=' mx-auto mb-20 max-w-7xl px-6  text-center lg:px-8'>
-        <h2 className='mb-5 text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl'>
+    <div className='bg-white py-24 px-6 sm:py-32'>
+      <div className=' mx-auto mb-20 max-w-7xl px-6   text-left  md:text-center lg:px-8'>
+        <h2 className='mb-5 text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl '>
           Our Blog
         </h2>
         <p className='mt-2 text-lg leading-8 text-gray-600'>

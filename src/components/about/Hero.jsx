@@ -30,8 +30,8 @@ export default function Hero() {
           </svg>
         </div>
         <div className='grid items-center pb-40 md:grid-cols-1  md:gap-10 lg:grid-cols-2 xl:grid-cols-2'>
-          <div className='mx-auto max-w-none px-5 sm:px-0 md:max-w-2xl'>
-            <h1 className=' mb-4 mt-2 max-w-lg text-4xl  font-bold   text-gray-800 md:mx-0 md:max-w-none md:text-5xl lg:mt-4 lg:w-10/12  lg:text-5xl xl:text-6xl'>
+          <div className='mx-auto max-w-none   sm:px-0 md:max-w-2xl'>
+            <h1 className=' mb-4 mt-2 max-w-3xl text-4xl  font-bold   text-gray-800 md:mx-0 md:max-w-none md:text-5xl lg:mt-4 lg:w-10/12  lg:text-5xl xl:text-6xl'>
               Get to know us
             </h1>
 
