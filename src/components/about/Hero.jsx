@@ -1,105 +1,59 @@
+import Image from 'next/image';
+
 export default function Hero() {
   return (
-    <div className='bg-white'>
-      <main>
-        <div className='relative isolate'>
-          {/* Gradient */}
-          <div className='absolute top-0 left-1/2 right-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-14 xl:ml-48'>
-            <svg
-              viewBox='0 0 801 1036'
-              aria-hidden='true'
-              className='w-[50.0625rem]'
-            >
-              <path
-                fill='url(#70656b7e-db44-4b9b-b7d2-1f06791bed52)'
-                fillOpacity='.3'
-                d='m282.279 843.371 32.285 192.609-313.61-25.32 281.325-167.289-58.145-346.888c94.5 92.652 277.002 213.246 251.009-45.597C442.651 127.331 248.072 10.369 449.268.891c160.956-7.583 301.235 116.434 351.256 179.39L507.001 307.557l270.983 241.04-495.705 294.774Z'
-              />
-              <defs>
-                <linearGradient
-                  id='70656b7e-db44-4b9b-b7d2-1f06791bed52'
-                  x1='508.179'
-                  x2='-28.677'
-                  y1='-116.221'
-                  y2='1091.63'
-                  gradientUnits='userSpaceOnUse'
-                >
-                  <stop stopColor='#9089FC' />
-                  <stop offset={1} stopColor='#FF80B5' />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
-          {/* Gradient */}
+    <>
+      <div className='container relative mx-auto px-0 py-7 md:px-2 xl:px-0'>
+        <div className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
+          <svg
+            className='relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]'
+            viewBox='0 0 1155 678'
+          >
+            <path
+              fill='url(#9b2541ea-d39d-499b-bd42-aeea3e93f5ff)'
+              fillOpacity='.3'
+              d='M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z'
+            />
+            <defs>
+              <linearGradient
+                id='9b2541ea-d39d-499b-bd42-aeea3e93f5ff'
+                x1='1155.49'
+                x2='-78.208'
+                y1='.177'
+                y2='474.645'
+                gradientUnits='userSpaceOnUse'
+              >
+                <stop stopColor='#2563FA ' />
+                <stop offset={1} stopColor='#00E5FF' />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div className='grid items-center pb-40 md:grid-cols-1  md:gap-10 lg:grid-cols-2 xl:grid-cols-2'>
+          <div className='mx-auto max-w-none px-5 sm:px-0 md:max-w-2xl'>
+            <h1 className=' mb-4 mt-2 max-w-lg text-4xl  font-bold   text-gray-800 md:mx-0 md:max-w-none md:text-5xl lg:mt-4 lg:w-10/12  lg:text-5xl xl:text-6xl'>
+              Get to know us
+            </h1>
 
-          <div className='overflow-hidden'>
-            <div className='mx-auto max-w-7xl px-6 pb-32 sm:pt-10 lg:px-8 '>
-              <div className='mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center'>
-                <div className='w-full max-w-xl lg:shrink-0 xl:max-w-2xl'>
-                  <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
-                    We’re changing the way people connect.
-                  </h1>
-                  <p className='relative mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none'>
-                    Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
-                    quis cupidatat mollit aute velit. Et labore commodo nulla
-                    aliqua proident mollit ullamco exercitation tempor. Sint
-                    aliqua anim nulla sunt mollit id pariatur in voluptate
-                    cillum.
-                  </p>
-                </div>
-                <div className='mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0'>
-                  <div className='ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80'>
-                    <div className='relative'>
-                      {/* <img
-                        src='https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80'
-                        alt=''
-                        className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-                      /> */}
-                      <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-                    </div>
-                  </div>
-                  <div className='mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36'>
-                    <div className='relative'>
-                      {/* <img
-                        src='https://images.unsplash.com/photo-1485217988980-11786ced9454?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80'
-                        alt=''
-                        className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-                      /> */}
-                      <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-                    </div>
-                    <div className='relative'>
-                      {/* <img
-                        src='https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80'
-                        alt=''
-                        className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-                      /> */}
-                      <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-                    </div>
-                  </div>
-                  <div className='w-44 flex-none space-y-8 pt-32 sm:pt-0'>
-                    <div className='relative'>
-                      {/* <img
-                        src='https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80'
-                        alt=''
-                        className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-                      /> */}
-                      <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-                    </div>
-                    <div className='relative'>
-                      {/* <img
-                        src='https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80'
-                        alt=''
-                        className='aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg'
-                      /> */}
-                      <div className='pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10' />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <h2 className='mt-2 max-w-3xl text-base leading-7 text-gray-800  md:mx-0 md:mt-5 md:max-w-3xl  lg:mt-6 lg:w-10/12'>
+              Gropherhost is a hosting platform that provides a wide range of
+              services to help you build your website. We are a team of
+              professionals who are passionate about web development and
+              technology. We are committed to providing you with the best
+              services and support.
+            </h2>
+          </div>
+          <div className='custom-height  relative mx-auto mt-[3rem] flex w-full justify-center rounded-3xl md:mt-0 md:min-w-[25rem]'>
+            <Image
+              src='https://i.ibb.co/dLsYS9C/Group-1.png'
+              alt='Collage of images'
+              role='img'
+              width={600}
+              height={500}
+            />
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </>
   );
 }
