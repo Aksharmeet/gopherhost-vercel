@@ -104,10 +104,10 @@ export default function Hero() {
       <Container>
         <div className='lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
           <div className='  relative z-10 mx-auto mt-0 max-w-xl lg:col-span-7 lg:mt-[7rem] lg:max-w-2xl lg:pt-6 xl:col-span-6'>
-            <h1 className='mx-auto max-w-md text-center text-4xl font-medium tracking-tight text-gray-900 md:max-w-xl lg:max-w-none lg:text-left'>
+            <h1 className=' max-w-md  text-5xl font-extrabold  tracking-tight text-gray-900 sm:max-w-none md:max-w-xl lg:max-w-none '>
               Fast & Secure Website Hosting Plans
             </h1>
-            <p className='mx-auto mt-6 max-w-sm text-center text-lg text-gray-600 md:max-w-xl lg:max-w-none lg:text-left'>
+            <p className=' mt-6 max-w-sm  text-lg text-gray-600 sm:max-w-none md:max-w-xl lg:max-w-none '>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut

@@ -61,9 +61,9 @@ function Pricing({ page }) {
         }`}
       >
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-          <div className='mx-auto max-w-4xl text-center'>
+          <div className='max-w-2xl  md:mx-auto lg:max-w-full lg:text-center'>
             <h2
-              className={`text-base font-semibold leading-7 ${
+              className={`mx-auto  text-base font-semibold leading-8 ${
                 page === 'hosting' ? 'text-white' : 'text-blue-600'
               }`}
             >
@@ -72,21 +72,22 @@ function Pricing({ page }) {
             <p
               className={`${
                 page === 'hosting' ? 'text-white' : 'text-gray-900'
-              } mt-2 text-4xl font-bold tracking-tight
-               sm:text-5xl`}
+              } mx-auto mt-2  text-4xl
+               font-bold tracking-tight sm:text-5xl`}
             >
               Pricing plans for teams of&nbsp;all&nbsp;sizes
             </p>
+
+            <p
+              className={`mx-auto mt-6   text-lg leading-8 lg:max-w-3xl ${
+                page === 'hosting' ? 'text-white' : 'text-gray-600'
+              }`}
+            >
+              GopherHost offers a wide variety of hosting plans to meet the
+              needs of any type of website. We offer affordable shared hosting,
+              managed WordPress hosting, and VPS hosting.
+            </p>
           </div>
-          <p
-            className={`mx-auto mt-6 max-w-2xl text-center text-lg leading-8 ${
-              page === 'hosting' ? 'text-white' : 'text-gray-600'
-            }`}
-          >
-            GopherHost offers a wide variety of hosting plans to meet the needs
-            of any type of website. We offer affordable shared hosting, managed
-            WordPress hosting, and VPS hosting.
-          </p>
           <div className='isolate mx-auto mt-16 grid max-w-md grid-cols-1 gap-y-8 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3'>
             {tiers.map((tier, tierIdx) => (
               <div
@@ -148,7 +149,7 @@ function Pricing({ page }) {
                     tier.mostPopular
                       ? 'bg-blue-600 text-white shadow-sm hover:bg-blue-500'
                       : 'text-blue-600 ring-1 ring-inset ring-blue-200 hover:ring-blue-300',
-                    'mt-8 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'
+                    'mt-8 block rounded-md py-2 px-3  text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'
                   )}
                 >
                   Buy plan

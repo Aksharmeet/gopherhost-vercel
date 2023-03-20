@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 import HeroEarth from '@/images/output-onlinepngtools.png';
 
+import Searchbar from '../../partial components/searchbar';
+
 const Hero = () => {
   return (
     <div className='relative'>
@@ -43,7 +45,7 @@ const Hero = () => {
                 <span className='font-semibold text-blue-600'> Fast</span>
               </div>
 
-              <h1 className='mt-5 max-w-lg text-3xl font-bold  tracking-wide text-gray-900 sm:text-5xl'>
+              <h1 className='mt-5 max-w-lg text-3xl font-extrabold   text-gray-900 sm:text-5xl'>
                 The Perfect Place to Host Your Website
               </h1>
 
@@ -51,19 +53,8 @@ const Hero = () => {
                 Get your domain name and hosting and get your website online
                 quickly and easily.
               </p>
-              <div className='mt-10 flex items-center gap-x-6'>
-                <a
-                  href='#'
-                  className='rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'
-                >
-                  Get started
-                </a>
-                <a
-                  href='#'
-                  className='text-sm font-semibold leading-6 text-gray-900'
-                >
-                  Learn more <span aria-hidden='true'>→</span>
-                </a>
+              <div className='mt-10'>
+                <Searchbar />
               </div>
             </div>
             <div className='mx-auto mt-16 overflow-hidden sm:mt-24 lg:mt-0 lg:flex-shrink-0 lg:flex-grow'>
