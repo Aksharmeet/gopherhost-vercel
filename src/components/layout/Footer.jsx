@@ -5,7 +5,7 @@ const navigation = {
     { name: 'Blog', href: '/blog' },
     { name: 'Domains', href: '/domains' },
     { name: 'Hosting', href: '/hosting' },
-    { name: 'Terms & Conditions', href: '/terms-conditions' },
+    { name: 'Terms of Service', href: '/terms-of-service' },
     { name: 'Privacy Policy', href: '/privacy-policy' },
   ],
   social: [
