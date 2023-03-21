@@ -7,7 +7,7 @@ import SearchBar from '../../partial components/searchbar';
 
 function Hero() {
   return (
-    <section className=' mx-auto w-[100vw] bg-gradient-to-r from-[#3ea1db] to-[#0164FF] py-12  px-3 md:px-0 md:text-center   lg:text-left'>
+    <section className=' mx-auto w-[100vw] bg-gradient-to-r from-[#3ea1db] to-[#0164FF] py-12  px-3 md:px-0   lg:text-left'>
       <div className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
         <svg
           className='relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]'

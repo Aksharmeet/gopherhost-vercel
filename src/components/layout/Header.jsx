@@ -49,41 +49,66 @@ export default function Navbar() {
                   {/* Current: "border-blue-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <Link
                     href='/'
-                    className={`inline-flex items-center border-b-2 ${
+                    className={`inline-flex items-center border-b-2   px-1 pt-1  text-sm font-medium text-gray-900 hover:border-gray-300  
+                    ${
                       switchColor === '/'
-                    }border-blue-500 px-1 pt-1 text-sm font-medium text-gray-900`}
+                        ? ' border-blue-500 text-gray-900'
+                        : 'border-transparent text-gray-500'
+                    }`}
                   >
                     Home
                   </Link>
                   <Link
                     href='/domains'
-                    className='inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    className={`inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium  hover:border-gray-300 hover:text-gray-700 
+                    ${
+                      switchColor === '/domains'
+                        ? ' border-blue-500 text-gray-900'
+                        : 'border-transparent text-gray-500'
+                    }`}
                   >
                     Domains
                   </Link>
                   <Link
                     href='/hosting'
-                    className='inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    className={`inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium  hover:border-gray-300 hover:text-gray-700   
+                    ${
+                      switchColor === '/hosting'
+                        ? ' border-blue-500 text-gray-900'
+                        : 'border-transparent text-gray-500'
+                    }`}
                   >
                     Hosting
                   </Link>
 
                   <Link
                     href='/blog'
-                    className='inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    className={`inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium  hover:border-gray-300 hover:text-gray-700     ${
+                      switchColor === '/blog'
+                        ? ' border-blue-500 text-gray-900'
+                        : 'border-transparent text-gray-500'
+                    }`}
                   >
                     Blog
                   </Link>
                   <Link
                     href='/about'
-                    className='inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    className={`inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium  hover:border-gray-300 hover:text-gray-700     ${
+                      switchColor === '/about'
+                        ? ' border-blue-500 text-gray-900'
+                        : 'border-transparent text-gray-500'
+                    }`}
                   >
                     About
                   </Link>
 
                   <Link
                     href='/contact'
-                    className='inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    className={`inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium  hover:border-gray-300 hover:text-gray-700     ${
+                      switchColor === '/contact'
+                        ? ' border-blue-500 text-gray-900'
+                        : 'border-transparent text-gray-500'
+                    }`}
                   >
                     Contact
                   </Link>
@@ -148,6 +173,7 @@ export default function Navbar() {
                       />
                     </Menu.Button>
                   </div>
+                  {/* dropdown */}
                   <Transition
                     as={Fragment}
                     enter='transition ease-out duration-100'
@@ -203,7 +229,7 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-
+          {/* Mobile */}
           <Disclosure.Panel className='absolute top-0 z-10 h-[100vh] w-[100%] bg-white lg:hidden'>
             <div className='space-y-1 pt-2 pb-3'>
               <div className=' flex  w-[100%] justify-end py-6 pr-4'>
@@ -211,46 +237,71 @@ export default function Navbar() {
                   <XMarkIcon className=' block h-6 w-6' aria-hidden='true' />
                 </Disclosure.Button>
               </div>
-              {/* Current: "bg-blue-50 border-blue-500 text-blue-700", Default: "border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800" */}
+
               <Disclosure.Button
                 as='a'
                 href='/'
-                className='block border-l-4 border-blue-500 bg-blue-50 py-2 pl-3 pr-4 text-base font-medium text-blue-700'
+                className={`block border-l-4   py-2 pl-3 pr-4 text-base font-medium hover:border-gray-300 hover:bg-gray-50    
+                 ${
+                   switchColor === '/'
+                     ? '   border-blue-500 bg-blue-50 text-blue-700'
+                     : 'border-transparent text-gray-600'
+                 }`}
               >
                 Home
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
                 href='/domains'
-                className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
+                className={`block border-l-4  py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800   ${
+                  switchColor === '/domains'
+                    ? '   border-blue-500 bg-blue-50 text-blue-700'
+                    : 'border-transparent text-gray-600'
+                }`}
               >
                 Domains
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
                 href='/hosting'
-                className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
+                className={`block border-l-4  py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800   ${
+                  switchColor === '/hosting'
+                    ? '   border-blue-500 bg-blue-50 text-blue-700'
+                    : 'border-transparent text-gray-600'
+                }`}
               >
                 Hosting
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
                 href='/blog'
-                className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
+                className={`block border-l-4  py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800   ${
+                  switchColor === '/blog'
+                    ? '   border-blue-500 bg-blue-50 text-blue-700'
+                    : 'border-transparent text-gray-600'
+                }`}
               >
                 Blog
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
                 href='/about'
-                className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
+                className={`block border-l-4  py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800  ${
+                  switchColor === '/about'
+                    ? '   border-blue-500 bg-blue-50 text-blue-700'
+                    : 'border-transparent text-gray-600'
+                }`}
               >
                 About
               </Disclosure.Button>
               <Disclosure.Button
                 as='a'
                 href='/contact'
-                className='block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-600 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800'
+                className={`block border-l-4  py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800  ${
+                  switchColor === '/contact'
+                    ? '   border-blue-500 bg-blue-50 text-blue-700'
+                    : 'border-transparent text-gray-600'
+                }`}
               >
                 Contact
               </Disclosure.Button>
