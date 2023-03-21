@@ -104,10 +104,10 @@ export default function Hero() {
       <Container>
         <div className='px-6 lg:grid lg:grid-cols-12 lg:gap-x-8 lg:gap-y-20'>
           <div className='  z-1 relative mx-auto mt-0 lg:col-span-7 lg:mt-[7rem] lg:max-w-2xl lg:pt-6 xl:col-span-6'>
-            <h1 className=' max-w-xl  text-5xl font-extrabold  tracking-tight text-gray-900 sm:max-w-none lg:max-w-none '>
+            <h1 className=' max-w-xl  text-3xl font-extrabold leading-10 tracking-tight  text-gray-900 sm:max-w-none sm:text-5xl lg:max-w-none '>
               Fast & Secure Website Hosting Plans
             </h1>
-            <p className=' mt-6 max-w-sm  text-lg text-gray-600 sm:max-w-none md:max-w-xl lg:max-w-none '>
+            <p className=' mt-6 max-w-sm  text-lg leading-7 text-gray-600 sm:max-w-none md:max-w-xl lg:max-w-none '>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet,
               consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -115,11 +115,17 @@ export default function Hero() {
             </p>
           </div>
           <div className='relative lg:col-span-5 lg:row-span-2 lg:mt-[2rem]'>
-            <BackgroundIllustration className='absolute left-1/2 top-4 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0' />
+            <BackgroundIllustration className='absolute left-1/2 top-4 -z-10 h-[1026px] w-[1026px] -translate-x-1/3 stroke-gray-300/70 [mask-image:linear-gradient(to_bottom,white_20%,transparent_75%)] sm:top-16 sm:-translate-x-1/2 lg:-top-16 lg:ml-12 xl:-top-14 xl:ml-0' />
 
-            <div className=' relative mx-auto mt-10 w-[350px] overflow-hidden rounded-3xl lg:mt-0'>
-              <Image src={hosting} alt='' width={500} height={400} />
-            </div>
+            {/* <div className=' relative mx-auto mt-10 overflow-hidden rounded-3xl  lg:mt-0'> */}
+            <Image
+              src={hosting}
+              alt=''
+              width={500}
+              height={400}
+              className='max-h-md mx-auto mt-10 rounded-lg'
+            />
+            {/* </div> */}
           </div>
         </div>
       </Container>

@@ -35,10 +35,10 @@ function Hero() {
       </div>
       <div className='mx-auto flex max-w-screen-xl flex-col gap-10  px-4 py-8  lg:flex-row'>
         <div className='mx-auto max-w-xl place-self-center lg:col-span-7'>
-          <h1 className='mb-4 max-w-2xl text-5xl font-extrabold leading-none tracking-tight  text-white md:text-5xl xl:text-6xl'>
+          <h1 className='mb-4 max-w-2xl text-3xl font-bold leading-10 tracking-tight text-white  sm:text-5xl md:text-5xl xl:text-6xl'>
             It All Starts With A Domain Name
           </h1>
-          <p className='mb-6 mt-6 max-w-2xl  text-lg  text-gray-100 lg:mb-8 lg:text-xl'>
+          <p className='mb-6 mt-6 max-w-2xl  text-lg  leading-7 text-gray-100 lg:mb-8 lg:text-xl'>
             Every great website starts with a great domain name. Check to see if
             your domain name is available.
           </p>
