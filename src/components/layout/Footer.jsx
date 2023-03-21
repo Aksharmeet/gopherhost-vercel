@@ -5,7 +5,8 @@ const navigation = {
     { name: 'Blog', href: '/blog' },
     { name: 'Domains', href: '/domains' },
     { name: 'Hosting', href: '/hosting' },
-    { name: 'Contact', href: '/contact' },
+    { name: 'Terms & Conditions', href: '/terms-conditions' },
+    { name: 'Privacy Policy', href: '/privacy-policy' },
   ],
   social: [
     {
@@ -77,7 +78,7 @@ export default function Footer() {
     <footer className='bg-white'>
       <div className='mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8'>
         <nav
-          className='-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12'
+          className='-mb-6 columns-2 flex-wrap sm:flex sm:justify-center sm:space-x-12'
           aria-label='Footer'
         >
           {navigation.main.map((item) => (
