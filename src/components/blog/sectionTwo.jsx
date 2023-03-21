@@ -4,7 +4,7 @@ import { generalPosts } from '../../_mockData/blogPage';
 
 export default function Example() {
   return (
-    <div className='bg-white py-24 px-12 sm:py-32'>
+    <div className='bg-white py-24 px-6 sm:py-32'>
       <div className='mx-auto max-w-2xl lg:max-w-none  lg:px-8'>
         <div>
           <h2 className='text-3xl tracking-tight text-gray-900 md:text-5xl md:font-bold'>

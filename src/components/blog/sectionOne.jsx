@@ -5,7 +5,7 @@ import { featuredPost, posts } from '../../_mockData/blogPage';
 export default function SectionOne() {
   return (
     <div className='relative  py-24 sm:py-32'>
-      <div className='mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8'>
+      <div className='mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 sm:gap-y-16 lg:grid-cols-2 '>
         <article className='mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg'>
           <time
             dateTime={featuredPost.datetime}
@@ -15,7 +15,7 @@ export default function SectionOne() {
           </time>
           <h2
             id='featured-post'
-            className='mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl'
+            className='mt-4 text-3xl font-bold leading-10 tracking-tight text-white sm:text-4xl'
           >
             {featuredPost.title}
           </h2>
