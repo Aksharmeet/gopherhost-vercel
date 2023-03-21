@@ -1,29 +1,27 @@
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from '@heroicons/react/20/solid';
+import { CloudArrowUpIcon, LockClosedIcon } from '@heroicons/react/20/solid';
 import Image from 'next/image';
+
+import dashboard from '../../images/Dashboard.png';
 
 const features = [
   {
-    name: 'Push to deploy.',
+    name: '24/7 Email Support',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.',
+      'We have a 3 hour SLA on all support requests, 24 hours a day, 365 days a year.  Often times we answer support requests much faster!',
     icon: CloudArrowUpIcon,
   },
   {
-    name: 'SSL certificates.',
+    name: 'Simply Fast Websites',
     description:
-      'Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.',
+      'We have the fastest and most secure shared hosting accounts available today.  Included in all hosting plans is LiteSpeed Web Server and LiteSpeed Cache with the QUIC.cloud CDN with end-to-end http3!',
     icon: LockClosedIcon,
   },
-  {
-    name: 'Database backups.',
-    description:
-      'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.',
-    icon: ServerIcon,
-  },
+  // {
+  //   name: 'Shared Web Hosting with Free cPanel',
+  //   description:
+  //     'All Hosting Plans come with cPanel, to make hosting easy for everyone. Setting-up addon domains, Emails, FTP and Databases is convenient with our included cPanel access.',
+  //   icon: ServerIcon,
+  // },
 ];
 
 export default function Example() {
@@ -34,18 +32,16 @@ export default function Example() {
           <div className='mx-auto grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0'>
             <div className='lg:row-start-2 lg:max-w-md'>
               <h2 className='text-3xl font-bold tracking-tight text-white sm:text-4xl'>
-                Boost your productivity.
-                <br />
-                Start using our app today.
+                Account Management
               </h2>
               <p className='mt-6 text-lg leading-8 text-gray-300'>
-                Ac euismod vel sit maecenas id pellentesque eu sed consectetur.
-                Malesuada adipiscing sagittis vel nulla. Ac euismod vel sit
-                maecenas.
+                All Hosting Plans come with cPanel, to make hosting easy for
+                everyone. Setting-up addon domains, Emails, FTP and Databases is
+                convenient with our included cPanel access.
               </p>
             </div>
             <Image
-              src='https://tailwindui.com/img/component-images/dark-project-app-screenshot.png'
+              src={dashboard}
               alt='Product screenshot'
               className='relative -z-20 min-w-full max-w-xl rounded-xl shadow-xl ring-1 ring-white/10 lg:row-span-4 lg:w-[64rem] lg:max-w-none'
               width={2432}
