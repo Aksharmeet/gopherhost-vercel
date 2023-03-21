@@ -14,11 +14,11 @@ export default function Testimonials() {
     <section
       id='testimonials'
       aria-label='What our customers are saying'
-      className='bg-slate-50 py-20 px-6 sm:py-32'
+      className='bg-slate-50 py-20  sm:py-32'
     >
       <Container>
         <div className='mx-auto max-w-3xl md:text-center'>
-          <h2 className='font-display text-5xl font-bold text-slate-900'>
+          <h2 className='font-display text-3xl font-bold text-slate-900 sm:text-5xl'>
             Loved by businesses worldwide.
           </h2>
           <p className='mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-800'>

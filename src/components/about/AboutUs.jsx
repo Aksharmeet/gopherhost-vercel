@@ -3,21 +3,19 @@ import React from 'react';
 
 const AboutUs = () => {
   return (
-    <div className='-pt-2 px-12 2xl:container md:mx-auto md:max-w-[44rem] md:py-12 md:px-6 lg:max-w-none lg:py-16 lg:px-20 2xl:mx-auto'>
+    <div className='-pt-2 px-6 2xl:container md:mx-auto md:max-w-[44rem] md:py-12 md:px-6 lg:max-w-none lg:py-16 lg:px-20 2xl:mx-auto'>
       <div className='flex flex-col gap-12 sm:gap-10 lg:flex-row lg:gap-8'>
         <div className='w-full lg:w-6/12'>
-          <h2 className='w-full text-4xl font-bold leading-9 md:text-5xl lg:text-4xl lg:leading-10'>
+          <h2 className='w-full text-3xl font-bold leading-9 md:text-5xl lg:text-4xl lg:leading-10'>
             Our Story
           </h2>
-          <p className='mt-6 text-base font-normal leading-6 text-gray-600'>
+          <p className='mt-6  text-lg leading-8 text-gray-600'>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum.In the first place we have granted to God, and
             by this our present charter confirmed for us and our heirs forever
             that the English Church shall be free, and shall have her rights
-            entire,It is a long established fact that a reader will be
-            distracted by the readable content of a page when looking at its
-            layout. The point of using Lorem Ipsum.
+            entire.
           </p>
         </div>
         <div className='w-full lg:w-6/12'>
@@ -171,7 +169,7 @@ const AboutUs = () => {
           <p className='mt-6 text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
             Founded
           </p>
-          <p className='mt-6 text-base font-normal leading-6 text-gray-600'>
+          <p className='mt-6 text-base font-normal leading-7 text-gray-600'>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </p>
@@ -180,7 +178,7 @@ const AboutUs = () => {
           <p className='mt-6 text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
             50M montly
           </p>
-          <p className='mt-6 text-base font-normal leading-6 text-gray-600'>
+          <p className='mt-6 text-base font-normal leading-7 text-gray-600'>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </p>
@@ -189,7 +187,7 @@ const AboutUs = () => {
           <p className='mt-6 text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
             400k User
           </p>
-          <p className='mt-6 text-base font-normal leading-6 text-gray-600'>
+          <p className='mt-6 text-base font-normal leading-7 text-gray-600'>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout.
           </p>
@@ -252,10 +250,10 @@ const AboutUs = () => {
 
       <div className='lg:mt-30 mt-[10rem] flex flex-col justify-between gap-16 md:gap-14 lg:flex-row'>
         <div className='w-full lg:w-6/12'>
-          <h2 className='text-4xl font-bold leading-7 text-gray-800 md:text-4xl lg:text-4xl lg:leading-9'>
+          <h2 className='text-3xl font-bold leading-7 text-gray-800 md:text-4xl lg:text-4xl lg:leading-9'>
             Our Mission
           </h2>
-          <p className='mt-6 w-full text-base font-normal leading-6 text-gray-600 lg:w-10/12 xl:w-9/12'>
+          <p className='mt-6 w-full text-lg  font-normal leading-8 text-gray-600 lg:w-10/12 xl:w-9/12'>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum.In the first place we have granted to God, and
@@ -264,7 +262,7 @@ const AboutUs = () => {
             entire, and her liberties inviolate; and we will that it be thus
             observed; which is apparent from
           </p>
-          <p className='mt-10 w-full text-base font-normal leading-6 text-gray-600 lg:w-10/12 xl:w-9/12'>
+          <p className='mt-10 w-full text-lg font-normal leading-8 text-gray-600 lg:w-10/12 xl:w-9/12'>
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum.
@@ -310,7 +308,7 @@ const AboutUs = () => {
                 <p className='text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
                   Team
                 </p>
-                <p className='mt-2 text-base font-normal leading-6 text-gray-600'>
+                <p className='mt-2 text-base font-normal leading-7 text-gray-600'>
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
@@ -361,7 +359,7 @@ const AboutUs = () => {
                 <p className='text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
                   Board
                 </p>
-                <p className='mt-2 text-base font-normal leading-6 text-gray-600'>
+                <p className='mt-2 text-base font-normal leading-7 text-gray-600'>
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>
@@ -398,7 +396,7 @@ const AboutUs = () => {
                 <p className='text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
                   Press
                 </p>
-                <p className='mt-2 text-base font-normal leading-6 text-gray-600'>
+                <p className='mt-2 text-base font-normal leading-7 text-gray-600'>
                   It is a long established fact that a reader will be distracted
                   by the readable content of a page when looking at its layout.
                 </p>

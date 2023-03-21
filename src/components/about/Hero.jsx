@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <>
-      <div className='container relative mx-auto px-0 py-7 md:px-2 xl:px-0'>
+      <div className='container relative mx-auto  py-7 px-6 md:px-2 xl:px-0'>
         <div className='absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80'>
           <svg
             className='relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]'
@@ -35,7 +35,7 @@ export default function Hero() {
               Get to know us
             </h1>
 
-            <h2 className='mt-2 max-w-3xl text-base leading-7 text-gray-800  md:mx-0 md:mt-5 md:max-w-3xl  lg:mt-6 lg:w-10/12'>
+            <h2 className='mt-2 max-w-3xl text-lg leading-8 text-gray-800  md:mx-0 md:mt-5 md:max-w-3xl  lg:mt-6 lg:w-10/12'>
               Gropherhost is a hosting platform that provides a wide range of
               services to help you build your website. We are a team of
               professionals who are passionate about web development and

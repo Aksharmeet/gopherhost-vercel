@@ -4,9 +4,9 @@ import { featuredPost, posts } from '../../_mockData/blogPreview';
 
 export default function BlogPreview() {
   return (
-    <div className='bg-white py-24 px-6 sm:py-32'>
-      <div className=' mx-auto mb-20 max-w-7xl px-6   text-left  md:text-center lg:px-8'>
-        <h2 className='mb-5 text-5xl font-bold tracking-tight text-gray-900 sm:text-5xl '>
+    <div className='bg-white py-24 px-0 sm:py-32 lg:px-6'>
+      <div className=' mx-auto mb-10 max-w-7xl px-6 text-left   sm:mb-20  md:text-center lg:px-8'>
+        <h2 className='mb-5 text-3xl  font-bold tracking-tight text-gray-900 sm:text-5xl '>
           Our Blog
         </h2>
         <p className='mt-2 text-lg leading-8 text-gray-600'>
@@ -15,47 +15,46 @@ export default function BlogPreview() {
       </div>
       <div className='mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-12 px-6 sm:gap-y-16 lg:grid-cols-2 lg:px-8'>
         <article className='mx-auto w-full max-w-2xl lg:mx-0 lg:max-w-lg'>
-          <time
-            dateTime={featuredPost.datetime}
-            className='block text-sm leading-6 text-gray-600'
-          >
-            {featuredPost.date}
-          </time>
-          <h2
-            id='featured-post'
-            className='mt-4 text-3xl font-bold  text-gray-900 sm:text-4xl'
-          >
-            {featuredPost.title}
-          </h2>
-          <p className='mt-4 text-lg leading-8 text-gray-600'>
-            {featuredPost.description}
-          </p>
-          <div className='mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col'>
-            <div className='flex'>
-              <a
-                href={featuredPost.href}
-                className='text-sm font-semibold leading-6 text-blue-600'
-                aria-describedby='featured-post'
-              >
-                Continue reading <span aria-hidden='true'>&rarr;</span>
-              </a>
+          <a href={featuredPost.href} aria-describedby='featured-post'>
+            <time
+              dateTime={featuredPost.datetime}
+              className='block text-sm leading-6 text-gray-600'
+            >
+              {featuredPost.date}
+            </time>
+
+            <h2
+              id='featured-post'
+              className='mt-4 text-lg font-bold  text-gray-900 sm:text-4xl'
+            >
+              {featuredPost.title}
+            </h2>
+            <p className='mt-4 text-sm leading-8 text-gray-600'>
+              {featuredPost.description}
+            </p>
+            <div className='mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col'>
+              <div className='hidden gap-2 text-sm font-semibold leading-6 text-blue-600 sm:flex'>
+                Continue reading
+                <span aria-hidden='true'> &rarr;</span>
+              </div>
+
+              <div className='flex lg:border-t lg:border-gray-900/10 lg:pt-8'>
+                <a
+                  href={featuredPost.author.href}
+                  className='flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900'
+                >
+                  <Image
+                    src={featuredPost.author.imageUrl}
+                    alt=''
+                    className='h-6 w-6 flex-none rounded-full bg-gray-50'
+                    width={24}
+                    height={24}
+                  />
+                  {featuredPost.author.name}
+                </a>
+              </div>
             </div>
-            <div className='flex lg:border-t lg:border-gray-900/10 lg:pt-8'>
-              <a
-                href={featuredPost.author.href}
-                className='flex gap-x-2.5 text-sm font-semibold leading-6 text-gray-900'
-              >
-                <Image
-                  src={featuredPost.author.imageUrl}
-                  alt=''
-                  className='h-6 w-6 flex-none rounded-full bg-gray-50'
-                  width={24}
-                  height={24}
-                />
-                {featuredPost.author.name}
-              </a>
-            </div>
-          </div>
+          </a>
         </article>
         <div className='mx-auto w-full max-w-2xl border-t border-gray-900/10 pt-12 sm:pt-16 lg:mx-0 lg:max-w-none lg:border-t-0 lg:pt-0'>
           <div className='-my-12 divide-y divide-gray-900/10'>

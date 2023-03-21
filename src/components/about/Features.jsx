@@ -4,12 +4,12 @@ import React from 'react';
 export default function Features() {
   return (
     <div>
-      <div className='mx-auto px-12 xl:container md:max-w-5xl md:px-24 lg:max-w-none xl:mx-auto 2xl:px-20'>
+      <div className='mx-auto px-6 xl:container sm:px-12 md:max-w-5xl md:px-24 lg:max-w-none xl:mx-auto 2xl:px-20'>
         <div className='items-center justify-between md:flex'>
           <div className='md:w-1/2 md:pr-8 xl:w-5/12 xl:pr-16'>
             <h1
               role='heading'
-              className='text-4xl font-bold leading-tight text-gray-800 lg:text-5xl'
+              className='text-3xl font-bold leading-tight text-gray-800 sm:text-5xl'
             >
               Why Choose GopherHost?
             </h1>

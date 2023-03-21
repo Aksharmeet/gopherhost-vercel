@@ -11,7 +11,7 @@ import Seo from '../components/Seo';
 
 function about() {
   return (
-    <>
+    <div>
       <Seo />
       <Hero />
       <AboutUs />
@@ -20,7 +20,7 @@ function about() {
       <Banner />
       <BlogPreview />
       <Testimonials />
-    </>
+    </div>
   );
 }
 
