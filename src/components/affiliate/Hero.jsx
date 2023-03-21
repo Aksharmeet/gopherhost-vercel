@@ -9,7 +9,7 @@ import Container from '../../partial components/Container';
 
 export function Hero() {
   return (
-    <Container className='pt-20 pb-16 text-center lg:pt-32'>
+    <Container className='pt-20 pb-16 sm:text-center lg:pt-32'>
       <h1 className='font-display mx-auto max-w-4xl text-3xl font-bold  text-slate-900 sm:text-7xl'>
         Our Affiliate Plan
       </h1>
@@ -18,11 +18,13 @@ export function Hero() {
         Signing up your friends and family with your custom affiliate link will
         earn you cash!
       </p>
-      <div className='mt-10 flex justify-center gap-x-6'>
-        <Button href='/register'>Earn Money with Gopherhost</Button>
+      <div className='mt-10 flex gap-x-6 sm:justify-center'>
+        <Button href='/register' className='w-full max-w-lg py-3'>
+          Earn Money with Gopherhost
+        </Button>
       </div>
       <div className='mt-36 lg:mt-44'>
-        <p className='font-display text-base text-slate-900'>
+        <p className='font-display  text-center text-base text-slate-900'>
           Trusted by these six companies so far
         </p>
         <ul

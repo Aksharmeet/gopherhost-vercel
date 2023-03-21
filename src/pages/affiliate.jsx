@@ -12,9 +12,9 @@ export default function Home() {
       <Seo templateTitle='Seo' />
       <main>
         <Hero />
-        <div className='mb-[15rem]' />
+        <div className='mb-[5rem] sm:mb-[15rem]' />
         <Features data={featuresHosting} type='affiliate' />
-        <div className='mt-[15rem]' />
+        <div className='mb-[5rem] sm:mt-[15rem]' />
         <CallToAction />
         <SecondaryFeatures />
         <Testimonials />
