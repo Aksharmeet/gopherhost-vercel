@@ -22,9 +22,9 @@ export default function Testimonials() {
             Loved by businesses worldwide.
           </h2>
           <p className='mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-800'>
-            Our software is so simple that people can’t help but fall in love
-            with it. Simplicity is easy when you just skip tons of
-            mission-critical features.
+            Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            tincidunt, nisl eget ultricies tincidunt, nisl elit lacinia tortor,
+            vitae luctus nisl lorem eget nisl.
           </p>
         </div>
         <ul

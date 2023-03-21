@@ -1,9 +1,9 @@
 export const featuredPost = {
   id: 1,
-  title: 'We’re incredibly proud to announce we have secured $75m in Series B',
+  title: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
   href: '#',
   description:
-    'Libero neque aenean tincidunt nec consequat tempor. Viverra odio id velit adipiscing id. Nisi vestibulum orci eget bibendum dictum. Velit viverra posuere vulputate volutpat nunc. Nunc netus sit faucibus.',
+    'Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
   date: 'Mar 16, 2020',
   datetime: '2020-03-16',
   author: {
@@ -16,10 +16,10 @@ export const featuredPost = {
 export const posts = [
   {
     id: 2,
-    title: 'Boost your conversion rate',
+    title: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.',
+      'Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
     date: 'Mar 10, 2020',
     datetime: '2020-03-16',
     author: {
@@ -31,10 +31,10 @@ export const posts = [
   },
   {
     id: 3,
-    title: 'Boost your conversion rate',
+    title: 'lorem ipsum dolor sit amet consectetur adipisicing elit.',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel iusto corrupti dicta laboris incididunt.',
+      'Lorem ipsum dolor sit amet consectetur adipi sicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
     date: 'Mar 10, 2020',
     datetime: '2020-03-16',
     author: {
