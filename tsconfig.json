@@ -26,7 +26,8 @@
     "**/*.tsx",
     "src/components/layout/Header.jsx",
     "src/components/Hero.jsx",
-    "src/pages/404.jsx"
+    "src/pages/404.jsx",
+    "src/components/Seo.jsx"
   ],
   "exclude": ["node_modules"],
   "moduleResolution": ["node_modules", ".next", "node"]

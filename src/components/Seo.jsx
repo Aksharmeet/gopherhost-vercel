@@ -3,27 +3,17 @@ import { useRouter } from 'next/router';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: 'GopherHost',
+  siteName: 'GopherHost',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+    'GopherHost is a web hosting company that provides affordable and reliable web hosting services. We offer a wide range of services including shared hosting, reseller hosting, VPS hosting, dedicated servers, and domain registration.',
+
+  url: 'https://gopherhost.com',
   type: 'website',
   robots: 'follow, index',
-  /**
-   * No need to be filled, will be populated with openGraph function
-   * If you wish to use a normal image, just specify the path below
-   */
-  image: 'https://tsnext-tw.thcl.dev/images/large-og.png',
 };
 
-type SeoProps = {
-  date?: string;
-  templateTitle?: string;
-} & Partial<typeof defaultMeta>;
-
-export default function Seo(props: SeoProps) {
+export default function Seo(props) {
   const router = useRouter();
   const meta = {
     ...defaultMeta,
@@ -32,16 +22,6 @@ export default function Seo(props: SeoProps) {
   meta['title'] = props.templateTitle
     ? `${props.templateTitle} | ${meta.siteName}`
     : meta.title;
-
-  // Use siteName if there is templateTitle
-  // but show full title if there is none
-  // !STARTERCONF Follow config for opengraph, by deploying one on https://github.com/theodorusclarence/og
-  // ? Uncomment code below if you want to use default open graph
-  // meta['image'] = openGraph({
-  //   description: meta.description,
-  //   siteName: props.templateTitle ? meta.siteName : meta.title,
-  //   templateTitle: props.templateTitle,
-  // });
 
   return (
     <Head>
@@ -91,9 +71,7 @@ export default function Seo(props: SeoProps) {
   );
 }
 
-// !STARTERCONF this is the default favicon, you can generate your own from https://realfavicongenerator.net/
-// ! then replace the whole /public/favicon folder and favicon.ico
-const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
+const favicons = [
   {
     rel: 'apple-touch-icon',
     sizes: '180x180',
@@ -112,10 +90,6 @@ const favicons: Array<React.ComponentPropsWithoutRef<'link'>> = [
     href: '/favicon/favicon-16x16.png',
   },
   { rel: 'manifest', href: '/favicon/site.webmanifest' },
-  {
-    rel: 'mask-icon',
-    href: '/favicon/safari-pinned-tab.svg',
-    color: '#00e887',
-  },
+
   { rel: 'shortcut icon', href: '/favicon/favicon.ico' },
 ];

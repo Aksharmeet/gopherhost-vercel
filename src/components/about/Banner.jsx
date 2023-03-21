@@ -1,9 +1,11 @@
+import Link from 'next/link';
+
 export default function Example() {
   return (
     <div className='mx-2 text-center md:mx-20'>
       <div className='mx-auto mt-[10rem] flex max-w-3xl items-center gap-x-6 rounded-full border border-black py-2.5 px-6 sm:px-3.5 sm:before:flex-1'>
         <p className='text-sm leading-6 '>
-          <a href='#'>
+          <Link href='#'>
             <strong className='font-semibold'>Gopherhost 2023</strong>
             <svg
               viewBox='0 0 2 2'
@@ -16,7 +18,7 @@ export default function Example() {
             <span aria-hidden='true' className='ml-2'>
               &rarr;
             </span>
-          </a>
+          </Link>
         </p>
         <div className='flex flex-1 justify-end'>
           <button

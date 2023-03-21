@@ -53,7 +53,7 @@ export default function Example() {
                   <div key={feature.name} className='relative'>
                     <dt className='ml-9 inline-block font-semibold text-white'>
                       <feature.icon
-                        className='absolute top-1 left-1 h-5 w-5 text-indigo-500'
+                        className='absolute top-1 left-1 h-5 w-5 text-blue-500'
                         aria-hidden='true'
                       />
                       {feature.name}

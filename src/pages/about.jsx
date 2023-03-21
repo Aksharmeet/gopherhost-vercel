@@ -12,7 +12,7 @@ import Seo from '../components/Seo';
 function about() {
   return (
     <div>
-      <Seo />
+      <Seo templateTitle='About' />
       <Hero />
       <AboutUs />
       <Stats />

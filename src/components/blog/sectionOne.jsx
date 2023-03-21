@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { featuredPost, posts } from '../../_mockData/blogPage';
 
@@ -24,16 +25,16 @@ export default function SectionOne() {
           </p>
           <div className='mt-4 flex flex-col justify-between gap-6 sm:mt-8 sm:flex-row-reverse sm:gap-8 lg:mt-4 lg:flex-col'>
             <div className='flex'>
-              <a
+              <Link
                 href={featuredPost.href}
                 className='text-sm font-semibold leading-6 text-white'
                 aria-describedby='featured-post'
               >
                 Continue reading <span aria-hidden='true'>&rarr;</span>
-              </a>
+              </Link>
             </div>
             <div className='flex lg:border-t lg:border-gray-100/40 lg:pt-8'>
-              <a
+              <Link
                 href={featuredPost.author.href}
                 className='flex gap-x-2.5 text-sm font-semibold leading-6 text-white'
               >
@@ -46,7 +47,7 @@ export default function SectionOne() {
                   />
                 </div>
                 {featuredPost.author.name}
-              </a>
+              </Link>
             </div>
           </div>
         </article>
@@ -63,17 +64,17 @@ export default function SectionOne() {
                     {post.date}
                   </time>
                   <h2 className='mt-2 text-lg font-semibold text-white '>
-                    <a href={post.href}>
+                    <Link href={post.href}>
                       <span className='absolute inset-0' />
                       {post.title}
-                    </a>
+                    </Link>
                   </h2>
                   <p className='mt-4 text-sm leading-6 text-white'>
                     {post.description}
                   </p>
                 </div>
                 <div className='mt-4 flex'>
-                  <a
+                  <Link
                     href={post.author.href}
                     className='relative flex gap-x-2.5 text-sm font-semibold leading-6 text-white'
                   >
@@ -86,7 +87,7 @@ export default function SectionOne() {
                       />
                     </div>
                     {post.author.name}
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}

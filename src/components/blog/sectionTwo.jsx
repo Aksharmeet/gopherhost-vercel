@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { generalPosts } from '../../_mockData/blogPage';
 
@@ -32,19 +33,19 @@ export default function Example() {
                   <time dateTime={post.datetime} className='text-gray-500'>
                     {post.date}
                   </time>
-                  <a
+                  <Link
                     href={post.category.href}
                     className='relative z-10 rounded-full bg-gray-50 py-1.5 px-3 font-medium text-gray-600 hover:bg-gray-100'
                   >
                     {post.category.title}
-                  </a>
+                  </Link>
                 </div>
                 <div className='group relative'>
                   <h3 className='mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600'>
-                    <a href={post.href}>
+                    <Link href={post.href}>
                       <span className='absolute inset-0' />
                       {post.title}
-                    </a>
+                    </Link>
                   </h3>
                   <p className='line-clamp-3 mt-5 text-sm leading-6 text-gray-600'>
                     {post.description}
@@ -60,10 +61,10 @@ export default function Example() {
                   />
                   <div className='text-sm leading-6'>
                     <p className='font-semibold text-gray-900'>
-                      <a href={post.author.href}>
+                      <Link href={post.author.href}>
                         <span className='absolute inset-0' />
                         {post.author.name}
-                      </a>
+                      </Link>
                     </p>
                     <p className='text-gray-600'>{post.author.role}</p>
                   </div>

@@ -1,8 +1,11 @@
 import React from 'react';
 
+import Seo from '../components/Seo';
+
 function PrivacyPolicy() {
   return (
     <div className=' mx-auto my-12 flex max-w-6xl flex-col items-center px-6 xl:px-0 '>
+      <Seo templateTitle='Privacy Policy' />
       <div>
         <h1 className='mt-5  text-3xl font-extrabold   text-gray-900 lg:text-5xl'>
           Privacy Policy
