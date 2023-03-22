@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
-import HeroEarth from '@/images/output-onlinepngtools.png';
-
+import HeroEarth from '../../images/output-onlinepngtools.png';
 import Searchbar from '../../partial components/searchbar';
 
 const Hero = () => {

@@ -1,5 +1,5 @@
-import testimonials from '@/_mockData/testimonals';
-import Container from '@/partial components/Container';
+import testimonials from '../../_mockData/testimonals';
+import Container from '../../partial components/Container';
 
 function QuoteIcon(props) {
   return (

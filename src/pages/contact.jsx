@@ -1,10 +1,9 @@
+import Seo from '../components/Seo';
 import {
   BuildingOffice2Icon,
   EnvelopeIcon,
   PhoneIcon,
 } from '@heroicons/react/24/outline';
-
-import Seo from '@/components/Seo';
 
 export default function Contact() {
   return (
@@ -93,9 +92,9 @@ export default function Contact() {
                     <dd>
                       <a
                         className='hover:text-gray-900'
-                        href='mailto:hello@example.com'
+                        href='mailto:hello..example.com'
                       >
-                        hello@example.com
+                        hello..example.com
                       </a>
                     </dd>
                   </div>

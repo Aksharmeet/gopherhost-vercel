@@ -1,23 +1,15 @@
 import * as React from 'react';
 
-import clsxm from '@/lib/clsxm';
+import UnderlineLink from './UnderlineLink';
+import clsxm from '../../lib/clsxm';
 
-import UnderlineLink from '@/components/links/UnderlineLink';
-import { UnstyledLinkProps } from '@/components/links/UnstyledLink';
-
-type ArrowLinkProps<C extends React.ElementType> = {
-  as?: C;
-  direction?: 'left' | 'right';
-} & UnstyledLinkProps &
-  React.ComponentProps<C>;
-
-export default function ArrowLink<C extends React.ElementType>({
+export default function ArrowLink({
   children,
   className,
   direction = 'right',
   as,
   ...rest
-}: ArrowLinkProps<C>) {
+}) {
   const Component = as || UnderlineLink;
 
   return (

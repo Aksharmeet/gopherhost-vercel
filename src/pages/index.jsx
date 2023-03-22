@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import Seo from '@/components/Seo';
-
 // data
 import { featuresLanding } from '../_mockData/features';
 import BlogPreview from '../components/common/BlogPreview';
@@ -11,6 +9,7 @@ import Pricing from '../components/common/Pricing';
 import Testimonials from '../components/common/Testimonials';
 import Hero from '../components/landing/Hero';
 import TrustBanner from '../components/landing/TrustBanner';
+import Seo from '../components/Seo';
 
 export default function HomePage() {
   return (

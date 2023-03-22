@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-import Cloud from '@/images/cloud.jpg';
-
+import Cloud from '../../images/cloud.jpg';
 import SearchBar from '../../partial components/searchbar';
 
 function Hero() {
