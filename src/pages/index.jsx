@@ -22,7 +22,6 @@ export default function HomePage() {
         <TrustBanner />
         <Pricing page='landing' />
         <CallToAction type='landing' />
-
         <Testimonials />
       </main>
     </>

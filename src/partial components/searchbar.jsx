@@ -26,19 +26,27 @@ const SearchBar = () => {
           </svg>
         </div>
         <div className='relative overflow-hidden rounded-lg border border-gray-300 '>
-          <input
-            type='search'
-            id='default-search'
-            class='text-md w-full border-none bg-gray-50 px-4 py-3 pl-5 text-gray-900 focus:border-2 '
-            placeholder='Search for domains'
-            required
-          />
-          <button
-            type='submit'
-            class='absolute right-0 bottom-0 top-0  bg-blue-600 px-7  text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 '
+          <form
+            action='https://account.gopherhost.com/cart.php?a=add&domain=register'
+            method='post'
           >
-            Search
-          </button>
+            <input
+              type='text'
+              id='default-search'
+              name='query'
+              size='20'
+              class='text-md w-full border-none bg-gray-50 px-4 py-3 pl-5 text-gray-900 focus:border-2 '
+              placeholder='Search for domains'
+              required
+            />
+            <button
+              type='submit'
+              class='absolute right-0 bottom-0 top-0  bg-blue-600 px-7  text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 '
+              value='Go'
+            >
+              Search
+            </button>
+          </form>
         </div>
       </div>
     </form>
