@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import Button from '../../partial components/Button';
 
 export default function Navbar() {
   const router = useRouter();
@@ -77,16 +78,6 @@ export default function Navbar() {
                   </Link>
 
                   <Link
-                    href='/blog'
-                    className={`inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium  hover:border-gray-300 hover:text-gray-700     ${
-                      switchColor === '/blog'
-                        ? ' border-blue-500 text-gray-900'
-                        : 'border-transparent text-gray-500'
-                    }`}
-                  >
-                    Blog
-                  </Link>
-                  <Link
                     href='/about'
                     className={`inline-flex items-center border-b-2  px-1 pt-1 text-sm font-medium  hover:border-gray-300 hover:text-gray-700     ${
                       switchColor === '/about'
@@ -118,22 +109,41 @@ export default function Navbar() {
                   >
                     Affiliate
                   </Link>
+                  <Link
+                    target='_blank'
+                    href='https://account.gopherhost.com/login'
+                  >
+                    <Button className='px-[30px]'> Login</Button>
+                  </Link>
                 </div>
               </div>
             </div>
             {/* Mobile menu button */}
             <div className='flex items-center lg:hidden'>
-              <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500'>
-                <span className='sr-only'>Open main menu</span>
-                {open ? (
+              <span className='sr-only'>Open main menu</span>
+              {open ? (
+                <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500'>
                   <XMarkIcon
                     className='absolute top-0 z-10 block h-6 w-6'
                     aria-hidden='true'
                   />
-                ) : (
-                  <Bars3Icon className='block h-6 w-6' aria-hidden='true' />
-                )}
-              </Disclosure.Button>
+                </Disclosure.Button>
+              ) : (
+                <div className='flex items-center gap-2'>
+                  <Disclosure.Button className='focus:ring-2 focus:ring-inset focus:ring-blue-500'>
+                    <div
+                      target='_blank'
+                      href='https://account.gopherhost.com/login'
+                      className='rounded-md bg-black px-[15px] py-[5px] text-sm text-white'
+                    >
+                      Login
+                    </div>
+                  </Disclosure.Button>
+                  <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500'>
+                    <Bars3Icon className='block h-6 w-6' aria-hidden='true' />
+                  </Disclosure.Button>
+                </div>
+              )}
             </div>
           </div>
 
@@ -180,17 +190,7 @@ export default function Navbar() {
               >
                 Hosting
               </Disclosure.Button>
-              <Disclosure.Button
-                as='a'
-                href='/blog'
-                className={`block border-l-4  py-2 pl-3 pr-4 text-base font-medium  hover:border-gray-300 hover:bg-gray-50 hover:text-gray-800   ${
-                  switchColor === '/blog'
-                    ? '   border-blue-500 bg-blue-50 text-blue-700'
-                    : 'border-transparent text-gray-600'
-                }`}
-              >
-                Blog
-              </Disclosure.Button>
+
               <Disclosure.Button
                 as='a'
                 href='/about'

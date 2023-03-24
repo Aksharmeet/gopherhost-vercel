@@ -2,7 +2,7 @@ import * as React from 'react';
 
 // data
 import { featuresLanding } from '../_mockData/features';
-import BlogPreview from '../components/common/BlogPreview';
+
 import CallToAction from '../components/common/CallToAction';
 import Features from '../components/common/Features';
 import Pricing from '../components/common/Pricing';
@@ -22,7 +22,7 @@ export default function HomePage() {
         <TrustBanner />
         <Pricing page='landing' />
         <CallToAction type='landing' />
-        <BlogPreview />
+
         <Testimonials />
       </main>
     </>

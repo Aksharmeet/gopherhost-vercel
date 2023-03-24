@@ -5,7 +5,7 @@ import Banner from '../components/about/Banner';
 import Features from '../components/about/Features';
 import Hero from '../components/about/Hero';
 import Stats from '../components/about/Stats';
-import BlogPreview from '../components/common/BlogPreview';
+
 import Testimonials from '../components/common/Testimonials';
 import Seo from '../components/Seo';
 
@@ -18,7 +18,7 @@ function about() {
       <Stats />
       <Features />
       <Banner />
-      <BlogPreview />
+      <div className='mb-[5rem] ' />
       <Testimonials />
     </div>
   );

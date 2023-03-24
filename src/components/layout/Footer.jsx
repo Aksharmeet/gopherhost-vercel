@@ -2,7 +2,6 @@ const navigation = {
   main: [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Blog', href: '/blog' },
     { name: 'Domains', href: '/domains' },
     { name: 'Hosting', href: '/hosting' },
     { name: 'Terms of Service', href: '/terms-of-service' },
