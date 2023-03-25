@@ -37,7 +37,7 @@ export default function Contact() {
                   </svg>
                 </div>
                 {/* background */}
-                <h2 className='text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-10'>
+                <h2 className='text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-[3rem]'>
                   We're Always Happy to Hear from You
                 </h2>
                 <p className='text-md mt-6 leading-7  text-gray-600 sm:text-lg sm:leading-8'>
