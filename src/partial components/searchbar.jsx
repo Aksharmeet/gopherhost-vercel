@@ -1,6 +1,6 @@
 const SearchBar = () => {
   return (
-    <form>
+    <div>
       <label
         for='default-search'
         class='sr-only mb-2 text-sm font-medium text-gray-900 '
@@ -49,7 +49,7 @@ const SearchBar = () => {
           </form>
         </div>
       </div>
-    </form>
+    </div>
   );
 };
 
