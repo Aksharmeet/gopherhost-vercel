@@ -130,15 +130,15 @@ export default function Navbar() {
                 </Disclosure.Button>
               ) : (
                 <div className='flex items-center gap-2'>
-                  <Disclosure.Button className='focus:ring-2 focus:ring-inset focus:ring-blue-500'>
-                    <div
-                      target='_blank'
-                      href='https://account.gopherhost.com/login'
-                      className='rounded-md bg-black px-[15px] py-[5px] text-sm text-white'
-                    >
+                  <Link
+                    className='focus:ring-2 focus:ring-inset focus:ring-blue-500'
+                    target='_blank'
+                    href='https://account.gopherhost.com/login'
+                  >
+                    <div className='rounded-md bg-black px-[15px] py-[5px] text-sm text-white'>
                       Login
                     </div>
-                  </Disclosure.Button>
+                  </Link>
                   <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500'>
                     <Bars3Icon className='block h-6 w-6' aria-hidden='true' />
                   </Disclosure.Button>

@@ -37,10 +37,10 @@ export default function Contact() {
                   </svg>
                 </div>
                 {/* background */}
-                <h2 className='text-3xl font-bold leading-10 tracking-tight text-gray-900 sm:text-5xl'>
+                <h2 className='text-3xl font-bold leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-10'>
                   We're Always Happy to Hear from You
                 </h2>
-                <p className='mt-6 text-lg leading-8 text-gray-600'>
+                <p className='text-md mt-6 leading-7  text-gray-600 sm:text-lg sm:leading-8'>
                   If you are an existing customer and need assistance, please
                   send a support request. Otherwise fill out the contact form
                   and we will get back to you as soon as we can.
@@ -51,7 +51,7 @@ export default function Contact() {
             <form
               action='https://formsubmit.co/contact@gopherhost.com'
               method='POST'
-              className='px-6 pb-24 pt-20 sm:pb-32 lg:py-48 lg:px-8'
+              className='px-6 pb-24 pt-0 sm:pb-32 lg:py-48 lg:px-8 lg:pt-20'
             >
               <div className='mx-auto max-w-xl lg:mr-0 lg:max-w-lg'>
                 <div className='grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2'>
