@@ -47,101 +47,105 @@ export default function Contact() {
                 </p>
               </div>
             </div>
+            <div className='relative mb-[10rem]'>
+              <form
+                action='https://formsubmit.co/contact@gopherhost.com'
+                method='POST'
+                className='px-6  pt-0  lg:px-8 lg:pt-20'
+              >
+                <div className='mx-auto max-w-xl lg:mr-0 lg:max-w-lg'>
+                  <div className='grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2'>
+                    <div className='sm:col-span-2'>
+                      <label
+                        htmlFor='name'
+                        className='block text-sm font-semibold leading-6 text-gray-900 '
+                      >
+                        First name
+                      </label>
+                      <div className='mt-2.5'>
+                        <input
+                          type='text'
+                          name='name'
+                          id='name'
+                          autoComplete='name'
+                          placeholder='Name'
+                          className='block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6'
+                          required
+                          minLength={3}
+                        />
+                      </div>
+                    </div>
 
-            <form
-              action='https://formsubmit.co/contact@gopherhost.com'
-              method='POST'
-              className='px-6 pb-24 pt-0 sm:pb-32 lg:py-48 lg:px-8 lg:pt-20'
-            >
-              <div className='mx-auto max-w-xl lg:mr-0 lg:max-w-lg'>
-                <div className='grid grid-cols-1 gap-y-6 gap-x-8 sm:grid-cols-2'>
-                  <div className='sm:col-span-2'>
-                    <label
-                      htmlFor='name'
-                      className='block text-sm font-semibold leading-6 text-gray-900 '
-                    >
-                      First name
-                    </label>
-                    <div className='mt-2.5'>
-                      <input
-                        type='text'
-                        name='name'
-                        id='name'
-                        autoComplete='name'
-                        placeholder='Name'
-                        className='block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6'
-                        required
-                        minLength={3}
-                      />
+                    <div className='sm:col-span-2'>
+                      <label
+                        htmlFor='email'
+                        className='block text-sm font-semibold leading-6 text-gray-900'
+                      >
+                        Email
+                      </label>
+                      <div className='mt-2.5'>
+                        <input
+                          type='email'
+                          name='email'
+                          id='email'
+                          autoComplete='email'
+                          placeholder='Email'
+                          className='block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6'
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div className='sm:col-span-2'>
+                      <label
+                        htmlFor='message'
+                        className='block text-sm font-semibold leading-6 text-gray-900'
+                      >
+                        Message
+                      </label>
+                      <div className='mt-2.5'>
+                        <textarea
+                          name='message'
+                          id='message'
+                          rows={4}
+                          placeholder='Message'
+                          className='block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6'
+                          defaultValue=''
+                          minLength={10}
+                          required
+                        />
+                      </div>
                     </div>
                   </div>
-
-                  <div className='sm:col-span-2'>
-                    <label
-                      htmlFor='email'
-                      className='block text-sm font-semibold leading-6 text-gray-900'
+                  <div className='mt-8'>
+                    <button
+                      type='submit'
+                      className=' w-full rounded-full bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'
                     >
-                      Email
-                    </label>
-                    <div className='mt-2.5'>
-                      <input
-                        type='email'
-                        name='email'
-                        id='email'
-                        autoComplete='email'
-                        placeholder='Email'
-                        className='block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6'
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className='sm:col-span-2'>
-                    <label
-                      htmlFor='message'
-                      className='block text-sm font-semibold leading-6 text-gray-900'
-                    >
-                      Message
-                    </label>
-                    <div className='mt-2.5'>
-                      <textarea
-                        name='message'
-                        id='message'
-                        rows={4}
-                        placeholder='Message'
-                        className='block w-full rounded-md border-0 py-2 px-3.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6'
-                        defaultValue=''
-                        minLength={10}
-                        required
-                      />
-                    </div>
+                      Send message
+                    </button>
                   </div>
                 </div>
-                <div className='mt-8 flex flex-col justify-end gap-4'>
-                  <button
-                    type='submit'
-                    className=' w-full rounded-full bg-blue-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'
-                  >
-                    Send message
-                  </button>
-                  <div className='flex items-center'>
-                    <div className='mr-5 h-[1px] w-full bg-gray-300' />
-                    <p className='text-sm text-gray-500'>or </p>
-                    <div className='ml-5 h-[1px] w-full bg-gray-300' />
-                    <div />
-                  </div>
-
-                  <button className=' border-1-black w-full rounded-full border   px-3.5 py-2.5 text-center text-sm font-semibold  shadow-sm hover:bg-stone-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'>
-                    <Link
-                      href='https://gopherhost.com/account/submitticket.php?step=2&deptid=1'
-                      target='_blank'
-                    >
+              </form>
+              <div className=' mx-auto flex w-full max-w-[637px] flex-col px-6 pt-6 sm:px-8 lg:absolute  lg:right-0 lg:mx-0 lg:max-w-[575px]'>
+                <div className='flex items-center'>
+                  <div className='mr-5 h-[1px] w-full bg-gray-300' />
+                  <p className='text-sm text-gray-500'>or </p>
+                  <div className='ml-5 h-[1px] w-full bg-gray-300' />
+                  <div />
+                </div>
+                <Link
+                  href='https://gopherhost.com/account/submitticket.php?step=2&deptid=1'
+                  target='_blank'
+                >
+                  <div className='mt-6 flex flex-col justify-end gap-4'>
+                    <button className=' border-1-black w-full rounded-full border   px-3.5 py-2.5 text-center text-sm font-semibold  shadow-sm hover:bg-stone-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600'>
                       Open Ticket
-                    </Link>
-                  </button>
-                </div>
+                    </button>
+                  </div>
+                </Link>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </main>
