@@ -19,12 +19,11 @@ export default function Testimonials() {
       <Container>
         <div className='mx-auto max-w-3xl md:text-center'>
           <h2 className='font-display text-3xl font-bold text-slate-900 sm:text-5xl'>
-            Loved by businesses worldwide.
+            Loved by small businesses.
           </h2>
           <p className='mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-800'>
-            Loreum ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            tincidunt, nisl eget ultricies tincidunt, nisl elit lacinia tortor,
-            vitae luctus nisl lorem eget nisl.
+            GopherHost can help you create or migrate an existing website and offer you
+            a better and faster service for less then you are paying now.
           </p>
         </div>
         <ul

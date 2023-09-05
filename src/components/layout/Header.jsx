@@ -1,10 +1,11 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Button from '../../partial components/Button';
+import GopherHostLogo from '../../images/logos/gopherhost';
+
 
 export default function Navbar() {
   const router = useRouter();
@@ -14,6 +15,7 @@ export default function Navbar() {
     setSwitchColor(router.pathname);
   }, [router]);
 
+  console.log('gopherhost', GopherHostLogo);
   return (
     <Disclosure as='nav'>
       {({ open }) => (
@@ -26,19 +28,11 @@ export default function Navbar() {
                   passHref
                   className='flex flex-shrink-0 items-center'
                 >
-                  <Image
-                    className='block h-8 w-auto lg:hidden'
-                    src='https://gopherhost.com/wp-content/uploads/2022/05/logo.svg'
-                    alt='Your Company'
-                    width={40}
-                    height={40}
-                  />
-                  <Image
-                    className='hidden h-8 w-auto lg:block'
-                    src='https://gopherhost.com/wp-content/uploads/2022/05/logo.svg'
-                    alt='Your Company'
-                    width={40}
-                    height={40}
+                  <GopherHostLogo
+                    className='mt-0 pt-0'
+                    style={{ marginTop: '-50px' }}
+                    alt='GopherHost Logo'
+                    width={200}
                   />
                 </Link>
                 <div className=' absolute right-6 top-10 hidden lg:flex lg:space-x-8'>
@@ -109,10 +103,7 @@ export default function Navbar() {
                   >
                     Affiliate
                   </Link>
-                  <Link
-                    target='_blank'
-                    href='https://account.gopherhost.com/login'
-                  >
+                  <Link href='https://account.gopherhost.com/login'>
                     <Button className='px-[30px]'> Login</Button>
                   </Link>
                 </div>

@@ -13,34 +13,34 @@ export default function index() {
               <div className=' mx-auto grid max-w-md  grid-cols-2 gap-10 md:max-w-4xl  md:grid-cols-4 '>
                 <div className='h-35 w-30 flex flex-col items-center justify-center rounded-2xl border border-white  py-5 shadow sm:h-48 sm:w-44 sm:py-0 '>
                   <h2 className='text-center text-3xl font-extrabold leading-10 text-white md:text-4xl lg:text-5xl'>
-                    25+
+                    2007
                   </h2>
                   <p className='text-md mt-4 text-center leading-none text-white md:text-base lg:text-lg'>
-                    Awards Won
+                    Year Founded
                   </p>
                 </div>
                 <div className='h-35 w-30 flex flex-col items-center justify-center rounded-2xl border border-white  py-5 shadow sm:h-48 sm:w-44 sm:py-0 '>
                   <h2 className='text-center text-3xl font-extrabold leading-10 text-white md:text-4xl lg:text-5xl'>
-                    25+
+                    1000+
                   </h2>
                   <p className='text-md mt-4 text-center leading-none text-white md:text-base lg:text-lg'>
-                    Awards Won
+                    Websites Created
                   </p>
                 </div>
                 <div className='h-35 w-30 flex flex-col items-center justify-center rounded-2xl border border-white  py-5 shadow sm:h-48 sm:w-44 sm:py-0 '>
                   <h2 className='text-center text-3xl font-extrabold leading-10 text-white md:text-4xl lg:text-5xl'>
-                    25+
+                    300+
                   </h2>
                   <p className='text-md mt-4 text-center leading-none text-white md:text-base lg:text-lg'>
-                    Awards Won
+                    Websites Hosted
                   </p>
                 </div>
                 <div className='h-35 w-30 flex flex-col items-center justify-center rounded-2xl border border-white  py-5 shadow sm:h-48 sm:w-44 sm:py-0 '>
                   <h2 className='text-center text-3xl font-extrabold leading-10 text-white md:text-4xl lg:text-5xl'>
-                    25+
+                    99.9%
                   </h2>
                   <p className='text-md mt-4 text-center leading-none text-white md:text-base lg:text-lg'>
-                    Awards Won
+                    Statisfaction
                   </p>
                 </div>
               </div>

@@ -9,15 +9,15 @@ import Seo from '../components/Seo';
 export default function Home() {
   return (
     <>
-      <Seo templateTitle='Seo' />
+      <Seo templateTitle='Affiliate' />
       <main>
         <Hero />
-        <div className='mb-[5rem] sm:mb-[15rem]' />
+        {/* <div className='mb-[5rem] sm:mb-[15rem]' />
         <Features data={featuresHosting} type='affiliate' />
-        <div className='mb-[5rem] sm:mt-[15rem]' />
-        <CallToAction />
-        <SecondaryFeatures />
-        <Testimonials />
+        <div className='mb-[5rem] sm:mt-[15rem]' /> */}
+        {/* <CallToAction /> */}
+        {/* <SecondaryFeatures /> */}
+        {/* <Testimonials /> */}
       </main>
     </>
   );

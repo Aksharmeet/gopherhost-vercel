@@ -6,7 +6,7 @@ function Pricing({ page }) {
     {
       name: 'Starter Hosting',
       id: 'tier-starter',
-      href: '#',
+      href: 'https://account.gopherhost.com/store/hosting/starter',
       priceMonthly: '$3.37',
       description: 'Affordable 1 GB hosting account for small websites.',
       features: [
@@ -21,7 +21,7 @@ function Pricing({ page }) {
     {
       name: 'Standard Hosting',
       id: 'tier-standard',
-      href: '#',
+      href: 'https://account.gopherhost.com/store/hosting/standard',
       priceMonthly: '$5.99',
       description: 'Most popular for small to medium business websites.',
       features: [
@@ -36,7 +36,7 @@ function Pricing({ page }) {
     {
       name: 'Managed WordPress',
       id: 'tier-managed-wordpress',
-      href: '#',
+      href: 'https://account.gopherhost.com/store/hosting/managed',
       priceMonthly: '$29.97',
       description: 'Complete hassle-free managed WordPress hosting.',
       features: [

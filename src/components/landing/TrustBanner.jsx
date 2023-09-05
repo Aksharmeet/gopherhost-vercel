@@ -2,10 +2,10 @@ import React from 'react';
 
 function TrustBanner() {
   const stats = [
-    { id: 1, name: 'Deployed Websites', value: '9000+' },
+    { id: 1, name: 'Deployed Websites', value: '1000+' },
     { id: 2, name: 'Registered Domains', value: '750+' },
     { id: 3, name: 'Client Satisfactions', value: '99.9%' },
-    { id: 4, name: 'Hosted Websites', value: '600+' },
+    { id: 4, name: 'Hosted Websites', value: '300+' },
   ];
   return (
     <div className='mx-auto mt-32  sm:mt-56'>

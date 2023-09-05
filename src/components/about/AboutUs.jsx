@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import storyImage from '../../images/story.png';
 
 const AboutUs = () => {
   return (
@@ -10,32 +11,17 @@ const AboutUs = () => {
             Our Story
           </h2>
           <p className='mt-6  text-lg leading-8 text-gray-600'>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum.In the first place we have granted to God, and
-            by this our present charter confirmed for us and our heirs forever
-            that the English Church shall be free, and shall have her rights
-            entire.
+            GopherHost has existed as an alternative solution for hosting
+            technology since 2007. We started out as a Real Estate website
+            creator but quickly turned into a hosting provider when our
+            customers were unhappy with the current hosting providers that were
+            available.
           </p>
         </div>
         <div className='w-full lg:w-6/12'>
           <Image
             className='hidden w-full lg:block'
-            src='https://i.ibb.co/RjNH7QB/Rectangle-122-1.png'
-            alt='people discussing on board'
-            width={600}
-            height={400}
-          />
-          <Image
-            className='hidden w-full sm:block lg:hidden'
-            src='https://i.ibb.co/16fPqrg/Rectangle-122-2.png'
-            alt='people discussing on board'
-            width={600}
-            height={400}
-          />
-          <Image
-            className='block w-full sm:hidden'
-            src='https://i.ibb.co/Jxhpxh6/Rectangle-122.png'
+            src={storyImage}
             alt='people discussing on board'
             width={600}
             height={400}
@@ -167,29 +153,30 @@ const AboutUs = () => {
       <div className='grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-8'>
         <div>
           <p className='mt-6 text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
-            Founded
+            Founded 2007
           </p>
           <p className='mt-6 text-base font-normal leading-7 text-gray-600'>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            Gopherhost was Founded in 2007 under Doory Web Solutions, LLC. We
+            rebranded a few times over the years, but now we are called
+            GopherHost.
           </p>
         </div>
         <div>
           <p className='mt-6 text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
-            50M montly
+            Hosting Provider 2010
           </p>
           <p className='mt-6 text-base font-normal leading-7 text-gray-600'>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            In 2010, we released our first hosting service in order to help our
+            customers get the website performance they deserve.
           </p>
         </div>
         <div className='hidden sm:block'>
           <p className='mt-6 text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
-            400k User
+            Now
           </p>
           <p className='mt-6 text-base font-normal leading-7 text-gray-600'>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout.
+            GopherHost is primarily a hosting and web technology company with a
+            mission to provide a better hosting service at an affordible price.
           </p>
         </div>
       </div>
@@ -254,18 +241,15 @@ const AboutUs = () => {
             Our Mission
           </h2>
           <p className='mt-6 w-full text-lg  font-normal leading-8 text-gray-600 lg:w-10/12 xl:w-9/12'>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum.In the first place we have granted to God, and
-            by this our present charter confirmed for us and our heirs forever
-            that the English Church shall be free, and shall have her rights
-            entire, and her liberties inviolate; and we will that it be thus
-            observed; which is apparent from
+            We love providing a high speed hosting service without all the
+            hidden and rising costs that other companies have.
           </p>
           <p className='mt-10 w-full text-lg font-normal leading-8 text-gray-600 lg:w-10/12 xl:w-9/12'>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum.
+            We enjoy saving our customers money by not having deceptive pricing.
+            Checkout out any popular hosting company and see that they charge an
+            initial price and at the end of the contract, you will renew at
+            their normal price. We don't do that. We don't have contracts and we
+            don't have intro pricing. What you see is what you pay.
           </p>
         </div>
         <div className='w-full lg:w-6/12'>
@@ -306,11 +290,11 @@ const AboutUs = () => {
               </div>
               <div className=''>
                 <p className='text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
-                  Team
+                  Our Team
                 </p>
                 <p className='mt-2 text-base font-normal leading-7 text-gray-600'>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                  We believe that happy employees provide the best service. All
+                  our employees work from home and enjoy working for us.
                 </p>
               </div>
             </div>
@@ -357,11 +341,12 @@ const AboutUs = () => {
               </div>
               <div className=''>
                 <p className='text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
-                  Board
+                  24/7 Support
                 </p>
                 <p className='mt-2 text-base font-normal leading-7 text-gray-600'>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                  We always have someone available to answer support requests
+                  24/7 whenever your have a question. Our goal is to respond
+                  within 1 hour of any support request.
                 </p>
               </div>
             </div>
@@ -394,11 +379,11 @@ const AboutUs = () => {
               </div>
               <div className=''>
                 <p className='text-xl font-semibold leading-5 text-gray-800 lg:text-2xl lg:leading-6'>
-                  Press
+                  Contact Us
                 </p>
                 <p className='mt-2 text-base font-normal leading-7 text-gray-600'>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
+                  You can always reach out to us if you have any concerns. We
+                  are here to listen.
                 </p>
               </div>
             </div>

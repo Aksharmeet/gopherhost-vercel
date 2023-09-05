@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import csrImage from '../../images/csr.png';
 
 export default function Features() {
   return (
@@ -17,15 +18,14 @@ export default function Features() {
               role='contentinfo'
               className='mt-4 mb-10 text-base leading-7 text-gray-600'
             >
-              There are currently 26 letters in the English alphabet, but there
-              was once a 27th letter. In fact, it still exists on computer
-              keyboards. The 27th letter was "Et" and referred to as an
-              "ampersand" or more commonly.
+              We don't have expensive call centers or customer service
+              representitives here to upsell you on products you don't need. We
+              want to give you only what you need at the best price.
             </p>
           </div>
           <div className='mt-4  w-full md:mt-0 md:w-1/2 xl:w-2/5'>
             <Image
-              src='https://i.ibb.co/wNG9Nk1/pexels-fauxels-3183166-1.png'
+              src={csrImage}
               alt='woman working'
               width={900}
               height={900}
@@ -43,8 +43,8 @@ export default function Features() {
               </h2>
             </div>
             <p className='mt-5 w-full max-w-none text-base leading-6 text-gray-600 lg:max-w-sm'>
-              A phrase is a short selection of words which when put together
-              create a concept.
+              Performance is our passion and something you will hear a lot from
+              us.
             </p>
           </div>
           <div>
@@ -53,12 +53,12 @@ export default function Features() {
                 2
               </div>
               <h2 className='ml-4 text-base font-semibold leading-4 text-gray-800'>
-                Extraordinary Performance
+                No Long-Term Commitments
               </h2>
             </div>
             <p className='mt-5 w-full max-w-none text-base leading-6 text-gray-600 lg:max-w-sm'>
-              A phrase is a short selection of words which when put together
-              create a concept.
+              Our price is our price, and we don't require you to pay for 3
+              years up front.
             </p>
           </div>
           <div>
@@ -67,12 +67,12 @@ export default function Features() {
                 3
               </div>
               <h2 className='ml-4 text-base font-semibold leading-4 text-gray-800'>
-                Extraordinary Performance
+                No Upselling
               </h2>
             </div>
             <p className='mt-5 w-full max-w-none text-base leading-6 text-gray-600 lg:max-w-sm'>
-              A phrase is a short selection of words which when put together
-              create a concept.
+              We don't have commission based sales representatives trying to
+              upsell you!
             </p>
           </div>
         </div>

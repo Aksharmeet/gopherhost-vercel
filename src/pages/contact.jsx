@@ -49,7 +49,7 @@ export default function Contact() {
             </div>
             <div className='relative mb-[10rem]'>
               <form
-                action='https://formsubmit.co/contact@gopherhost.com'
+                action='https://formsubmit.co/c07784dfc2947e1f8b499c4c6cd37f79'
                 method='POST'
                 className='px-6  pt-0  lg:px-8 lg:pt-20'
               >

@@ -27,7 +27,7 @@ export default function CallToAction() {
             Do you have a comment, question or need support. Please contact us
             and we will do our best to return your request in a timely fashion.
           </p>
-          <Button href='/register' color='white' className='mt-10'>
+          <Button href='/contact' color='white' className='mt-10'>
             Contact Us
           </Button>
         </div>

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import collageImage from '../../images/Group-1.png';
 
 export default function Hero() {
   return (
@@ -36,16 +37,16 @@ export default function Hero() {
             </h1>
 
             <h2 className='mt-2 max-w-3xl text-lg leading-8 text-gray-800  md:mx-0 md:mt-5 md:max-w-3xl  lg:mt-6 lg:w-10/12'>
-              Gropherhost is a hosting platform that provides a wide range of
-              services to help you build your website. We are a team of
-              professionals who are passionate about web development and
-              technology. We are committed to providing you with the best
-              services and support.
+              Gropherhost is a hosting platform that provides a targeted set of
+              online services to help you succeed with your project or business.
+              We are a dedicated team of professionals who are passionate about
+              web development and technology. We are committed to providing you
+              with the best services and support.
             </h2>
           </div>
           <div className='custom-height  relative mx-auto mt-[3rem] flex w-full justify-center rounded-3xl md:mt-0 md:min-w-[25rem]'>
             <Image
-              src='https://i.ibb.co/dLsYS9C/Group-1.png'
+              src={collageImage}
               alt='Collage of images'
               role='img'
               width={600}
